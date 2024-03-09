@@ -1,0 +1,77 @@
+{
+  "id": "b6877c33-0baf-459c-8ad5-8832d8e33671",
+  "version": "2.0",
+  "name": "latestpdf",
+  "url": "https://pgportal.gov.in",
+  "tests": [{
+    "id": "13a75053-1b8c-42b1-b3d0-3b0a7e9bb70f",
+    "name": "demo1",
+    "commands": [{
+      "id": "8bb54a71-b34e-4022-9b97-5ae456faa05f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03bf5b8d-08fe-4661-a86e-4cf0de1c285d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "056f3136-52cb-4d5b-beae-d3b13dd18c8c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.whatsNew li:nth-child(1) > a",
+      "targets": [
+        ["css=.whatsNew li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(@href, '/Home/Preview/U3RyZW5ndGhlbmluZ29mTWFjaGluZXJ5Zm9yUmVkcmVzc2Fsb2ZQdWJsaWNHcmlldmFuY2VDUEdSQU1TLnBkZg%3d%3d')]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8049",
+      "windowTimeout": 2000
+    }, {
+      "id": "1b36146a-1f4d-45e1-ba8e-40a9ab940857",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0eb0bf6-fefa-43a0-b197-8e950c379dbf",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8049}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e57bfd8-ec16-4360-9509-3b1f7c4b81d0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5dd7799a-1f97-4faa-9d1c-51f112baecb8",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "02396b0d-55f8-4e54-aea1-157b877d9a55",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["13a75053-1b8c-42b1-b3d0-3b0a7e9bb70f"]
+  }],
+  "urls": ["https://pgportal.gov.in/"],
+  "plugins": []
+}
